@@ -1,0 +1,17 @@
+{
+  "name": "cept",
+  "version": "0.0.0",
+  "description": "Intercept method calls",
+  "license": "MIT",
+  "keywords": [
+    "intercept",
+    "method",
+    "function",
+    "call",
+    "invoke"
+  ],
+  "repository": "wooorm/cept",
+  "scripts": [
+    "index.js"
+  ]
+}
