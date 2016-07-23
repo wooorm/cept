@@ -1,11 +1,15 @@
 /**
  * @author Titus Wormer
- * @copyright 2015 Titus Wormer. All rights reserved.
- * @module mdast-util-visit
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module cept
  * @fileoverview Intercept calls to `name` on `context`.
  */
 
 'use strict';
+
+/* Expose. */
+module.exports = cept;
 
 /**
  * Intercept calls to `name` on `context`.
@@ -15,18 +19,12 @@
  * @param {Function} callback
  * @return {Function} A method to stop intercepting.
  */
-function intercept(context, name, callback) {
-    var original = context[name];
+function cept(context, name, callback) {
+  var original = context[name];
 
-    context[name] = callback;
+  context[name] = callback;
 
-    return function () {
-        context[name] = original;
-    };
+  return function () {
+    context[name] = original;
+  };
 }
-
-/*
- * Expose.
- */
-
-module.exports = intercept;

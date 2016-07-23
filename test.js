@@ -1,29 +1,29 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module cept
+ * @fileoverview Test suite for `cept`.
+ */
+
 'use strict';
 
-/* eslint-env mocha */
-
-/*
- * Dependencies.
- */
-
+/* Dependencies. */
+var test = require('tape');
 var cept = require('./');
-var assert = require('assert');
 
-/*
- * Tests.
- */
+/* Tests. */
+test('cept(context, key, callback)', function (t) {
+  var original = process.cwd();
+  var stop = cept(process, 'cwd', function () {
+    return '~';
+  });
 
-describe('cept(context, key, callback)', function () {
-    it('should work', function () {
-        var original = process.cwd();
-        var stop = cept(process, 'cwd', function () {
-            return '~';
-        });
+  t.equal(process.cwd(), '~');
 
-        assert.equal(process.cwd(), '~');
+  stop();
 
-        stop();
+  t.equal(process.cwd(), original);
 
-        assert.equal(process.cwd(), original);
-    });
+  t.end();
 });
