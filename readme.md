@@ -44,7 +44,7 @@ console.log('foo bar baz');
 
 Intercept all calls to `context[key]` (e.g., `console.log`).
 From now on, when the original method would be invoked, `callback`
-is used instead. Invoking `stop` reverts everything back to normal.
+is used instead.  Invoking `stop` reverts everything back to normal.
 
 ###### Parameters
 
