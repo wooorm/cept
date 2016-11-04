@@ -10,14 +10,14 @@
     "call",
     "invoke"
   ],
-  "files": [
-    "index.js"
-  ],
   "repository": "https://github.com/wooorm/cept",
   "bugs": "https://github.com/wooorm/cept/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {},
   "devDependencies": {
