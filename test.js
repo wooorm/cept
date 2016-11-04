@@ -1,11 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2015 Titus Wormer
- * @license MIT
- * @module cept
- * @fileoverview Test suite for `cept`.
- */
-
 'use strict';
 
 /* Dependencies. */
