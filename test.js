@@ -7,11 +7,9 @@ var cept = require('./');
 /* Tests. */
 test('cept(context, key, callback)', function (t) {
   var original = process.cwd();
-  var stop = cept(process, 'cwd', function () {
-    return '~';
-  });
+  var stop = cept(process, 'cwd', fake);
 
-  t.equal(process.cwd(), '~');
+  t.equal(process.cwd(), fake());
 
   stop();
 
@@ -19,3 +17,7 @@ test('cept(context, key, callback)', function (t) {
 
   t.end();
 });
+
+function fake() {
+  return '~';
+}
