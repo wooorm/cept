@@ -1,7 +1,5 @@
 # cept [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-<!--lint disable heading-increment-->
-
 Intercept method calls.
 
 ## Installation
