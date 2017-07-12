@@ -4,7 +4,7 @@ Intercept method calls.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install cept
@@ -12,28 +12,19 @@ npm install cept
 
 ## Usage
 
-Dependencies.
-
 ```javascript
 var cept = require('cept');
-```
 
-No-op:
+// Intercept:
+var stop = cept(console, 'log', noop);
 
-```javascript
-function noop() {}
-```
-
-Intercept:
-
-```javascript
-cept(console, 'log', noop);
-```
-
-From now on `console.log` is ignored:
-
-```javascript
+// From now on `console.log` is ignored:
 console.log('foo bar baz');
+
+// No longer ignored!
+stop();
+
+function noop() {}
 ```
 
 ## API
@@ -46,9 +37,9 @@ is used instead.  Invoking `stop` reverts everything back to normal.
 
 ###### Parameters
 
-*   `context` (`Object`) — Context object;
-*   `key` (`string`) — Property where the original function lives;
-*   `callback` (`Function`) - Interceptor.
+*   `context` (`Object`) — Context object
+*   `key` (`string`) — Property where the original function lives
+*   `callback` (`Function`) - Interceptor
 
 ###### Returns
 
@@ -68,7 +59,7 @@ is used instead.  Invoking `stop` reverts everything back to normal.
 
 [codecov]: https://codecov.io/github/wooorm/cept
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
