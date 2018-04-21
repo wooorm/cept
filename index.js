@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-module.exports = cept;
+module.exports = cept
 
 function cept(context, name, callback) {
-  var original = context[name];
+  var original = context[name]
 
-  context[name] = callback;
+  context[name] = callback
 
-  return function () {
-    context[name] = original;
-  };
+  return function() {
+    context[name] = original
+  }
 }

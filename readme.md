@@ -13,16 +13,16 @@ npm install cept
 ## Usage
 
 ```javascript
-var cept = require('cept');
+var cept = require('cept')
 
 // Intercept:
-var stop = cept(console, 'log', noop);
+var stop = cept(console, 'log', noop)
 
 // From now on `console.log` is ignored:
-console.log('foo bar baz');
+console.log('foo bar baz')
 
 // No longer ignored!
-stop();
+stop()
 
 function noop() {}
 ```

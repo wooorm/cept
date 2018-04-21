@@ -1,21 +1,21 @@
-'use strict';
+'use strict'
 
-var test = require('tape');
-var cept = require('.');
+var test = require('tape')
+var cept = require('.')
 
-test('cept(context, key, callback)', function (t) {
-  var original = process.cwd();
-  var stop = cept(process, 'cwd', fake);
+test('cept(context, key, callback)', function(t) {
+  var original = process.cwd()
+  var stop = cept(process, 'cwd', fake)
 
-  t.equal(process.cwd(), fake());
+  t.equal(process.cwd(), fake())
 
-  stop();
+  stop()
 
-  t.equal(process.cwd(), original);
+  t.equal(process.cwd(), original)
 
-  t.end();
-});
+  t.end()
+})
 
 function fake() {
-  return '~';
+  return '~'
 }
