@@ -10,7 +10,7 @@
     "call",
     "invoke"
   ],
-  "repository": "https://github.com/wooorm/cept",
+  "repository": "wooorm/cept",
   "bugs": "https://github.com/wooorm/cept/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
