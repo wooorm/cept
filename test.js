@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var cept = require('./');
+var cept = require('.');
 
 test('cept(context, key, callback)', function (t) {
   var original = process.cwd();
