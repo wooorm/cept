@@ -5,3 +5,4 @@ coverage/
 node_modules/
 cept.js
 cept.min.js
+yarn.lock
