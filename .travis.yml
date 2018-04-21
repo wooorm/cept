@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-- '4.0'
-- '8.0'
+- lts/boron
+- node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: XiJ6cC4ozoNEWH+yK0Y7/gac1b470yOsXQaEmwJmDPq1TxkvZoB6QCCTzQI1yInB9uNURmXrhcar2hVqJoYuzBd0zaf+TkpeK9G7xZlrTub0sTOCxGMHFVFcY2E7T0K1p8SEC8OtfZ2shzSKj//kPcoDlBTlU+8rD2OcGcqEcDnwXyd/xYEMLuMFjZSk32+TafQ0BXXIwb0g4QRkqHiwYW3/4Wu2fjoBTXpNoUgzK/71FpodlfCamj/x7HdwMDxYnTVStDa4bB//5YngwlYTDkVvpRddwunMeSD1in7TaT0J6A+LwjapqOYpkGBWGddMb+3eTiPAAv86xJpTCMPhwMwKGHpdPGzPyy6iGdY3SkjawSOHRSC4k72E3rf3yFdAiwX/xY9yBZWU8/0MYJh/7aOBj4+EWKpAdQUgxPyXQ8FAj/cMiTmZg3Eb0WkTZUAh6QCBQ7rEeGOgPFbziDalJRwNmquhCS2leO6ajyNm0mknfft1l+EtIe0GR83ICYDgzQOFC5wxVwEMHmyneqXcm/2vUFq/nKwwQitOQ/fpbbBb+SMTGz8Xd2/d2PUXv/TCJmka03eJicgVuvmhRAdfotuh7ewDlIokzpf7v+v2R8TEeTmKBThr3fTWKOovFLrIIZzyn2W6ylgJkelc6mCWiJLnxZJRTfeXQ4jvRZ1Olu4=
   file:
@@ -12,4 +13,3 @@ deploy:
     - "cept.min.js"
   on:
     tags: true
-    node: '8.0'
