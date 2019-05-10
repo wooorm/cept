@@ -1,4 +1,9 @@
-# cept [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# cept
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Intercept method calls.
 
@@ -51,13 +56,21 @@ is used instead.  Invoking `stop` reverts everything back to normal.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/cept.svg
+[build-badge]: https://img.shields.io/travis/wooorm/cept.svg
 
-[travis]: https://travis-ci.org/wooorm/cept
+[build]: https://travis-ci.org/wooorm/cept
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/cept.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/cept.svg
 
-[codecov]: https://codecov.io/github/wooorm/cept
+[coverage]: https://codecov.io/github/wooorm/cept
+
+[downloads-badge]: https://img.shields.io/npm/dm/cept.svg
+
+[downloads]: https://www.npmjs.com/package/cept
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/cept.svg
+
+[size]: https://bundlephobia.com/result?p=cept
 
 [npm]: https://docs.npmjs.com/cli/install
 
