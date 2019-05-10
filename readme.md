@@ -63,4 +63,4 @@ is used instead.  Invoking `stop` reverts everything back to normal.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
