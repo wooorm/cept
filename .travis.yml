@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: XiJ6cC4ozoNEWH+yK0Y7/gac1b470yOsXQaEmwJmDPq1TxkvZoB6QCCTzQI1yInB9uNURmXrhcar2hVqJoYuzBd0zaf+TkpeK9G7xZlrTub0sTOCxGMHFVFcY2E7T0K1p8SEC8OtfZ2shzSKj//kPcoDlBTlU+8rD2OcGcqEcDnwXyd/xYEMLuMFjZSk32+TafQ0BXXIwb0g4QRkqHiwYW3/4Wu2fjoBTXpNoUgzK/71FpodlfCamj/x7HdwMDxYnTVStDa4bB//5YngwlYTDkVvpRddwunMeSD1in7TaT0J6A+LwjapqOYpkGBWGddMb+3eTiPAAv86xJpTCMPhwMwKGHpdPGzPyy6iGdY3SkjawSOHRSC4k72E3rf3yFdAiwX/xY9yBZWU8/0MYJh/7aOBj4+EWKpAdQUgxPyXQ8FAj/cMiTmZg3Eb0WkTZUAh6QCBQ7rEeGOgPFbziDalJRwNmquhCS2leO6ajyNm0mknfft1l+EtIe0GR83ICYDgzQOFC5wxVwEMHmyneqXcm/2vUFq/nKwwQitOQ/fpbbBb+SMTGz8Xd2/d2PUXv/TCJmka03eJicgVuvmhRAdfotuh7ewDlIokzpf7v+v2R8TEeTmKBThr3fTWKOovFLrIIZzyn2W6ylgJkelc6mCWiJLnxZJRTfeXQ4jvRZ1Olu4=
+    secure: K5+KySY6ufzUoT6eZjMUPA2B/IGCYapiJa9bcsnJrmR0vE38C+c5YtQR725vuB592JjEr4uzEfleNUfeOeWudzc1gbuS5wZxzuuDLoxNimCtGP5MO5tbsO7GMiqMlVK/FVKsisxhqCPcDo9LON12tenD8LhYwtVOgsPrilZq20Jaa2dK8Xivnrw8+BiSQqhFYEauvx80qNmNGHJNqvxTnGouhY7Z4vkvVM0I10g3Sg6Mmrq0Ja6T0XCKk+vNzB4lUqG++oa+czL0rDV4Tc0RlnroSK1BKJebc3YPJoPWTcZrdvtz7K6n5zYo9K4s7HAwg+hmMdEBUShq3RBb1utkIq5Ape4UGkkpub0qUV1yk2Y0b/21rhPpMr20zbka/VF8NC1xyiSUDEC+JkKB+NFY4wbvot5q9HZN8X7459o7dd2RvFhkZqOpaad6UDMBWoKsa2KwcBm2aybr3S8cQd2zxu1f70YziVkYZd7u6/pPwJ7a+wKbav5Dhui6mXdUO9yQRjk6LQw3oHJpQEnQNbeSrJOggZd5KCOnB/l0e9VXVQrQqkjdANx69jmOSeCQaIGzPOzgTSlIS+PUXuK0QjQbhJGNDKOtq6NcmHbpaiO5OIAbhaHcmdcyqV9iQAg9GehfZzYlpryDPk+EdPbGBQ2dZtKs6mgfdLDiE+/omj0qMNI=
   file:
-    - "cept.js"
-    - "cept.min.js"
+    - 'cept.js'
+    - 'cept.min.js'
   on:
     tags: true
