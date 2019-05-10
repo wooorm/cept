@@ -61,6 +61,6 @@ is used instead.  Invoking `stop` reverts everything back to normal.
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [author]: http://wooorm.com
