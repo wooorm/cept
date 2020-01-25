@@ -7,17 +7,17 @@
 
 Intercept method calls.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install cept
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var cept = require('cept')
 
 // Intercept:
@@ -37,8 +37,9 @@ function noop() {}
 ### `stop = intercept(context, key, callback)`
 
 Intercept all calls to `context[key]` (e.g., `console.log`).
-From now on, when the original method would be invoked, `callback`
-is used instead.  Invoking `stop` reverts everything back to normal.
+From now on, when the original method would be invoked, `callback` is used
+instead.
+Invoking `stop` reverts everything back to normal.
 
 ###### Parameters
 
