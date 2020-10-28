@@ -3,7 +3,7 @@
 var test = require('tape')
 var cept = require('.')
 
-test('cept(context, key, callback)', function(t) {
+test('cept(context, key, callback)', function (t) {
   var original = process.cwd()
   var stop = cept(process, 'cwd', fake)
 

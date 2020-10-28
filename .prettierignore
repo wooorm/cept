@@ -1,3 +1,5 @@
 coverage/
+*.json
+*.md
 cept.js
 cept.min.js

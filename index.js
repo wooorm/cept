@@ -7,7 +7,7 @@ function cept(context, name, callback) {
 
   context[name] = callback
 
-  return function() {
+  return function () {
     context[name] = original
   }
 }
