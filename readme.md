@@ -57,9 +57,9 @@ Invoking `stop` reverts everything back to normal.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/cept.svg
+[build-badge]: https://github.com/wooorm/cept/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/cept
+[build]: https://github.com/wooorm/cept/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/cept.svg
 
