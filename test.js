@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var cept = require('.')
+import test from 'tape'
+import {cept} from './index.js'
 
 test('cept(context, key, callback)', function (t) {
   var original = process.cwd()

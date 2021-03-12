@@ -9,6 +9,9 @@ Intercept method calls.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,7 +21,7 @@ npm install cept
 ## Use
 
 ```js
-var cept = require('cept')
+import {cept} from 'cept'
 
 // Intercept:
 var stop = cept(console, 'log', noop)
@@ -34,7 +37,10 @@ function noop() {}
 
 ## API
 
-### `stop = intercept(context, key, callback)`
+This package exports the following identifiers: `cept`.
+There is no default export.
+
+### `stop = cept(context, key, callback)`
 
 Intercept all calls to `context[key]` (e.g., `console.log`).
 From now on, when the original method would be invoked, `callback` is used

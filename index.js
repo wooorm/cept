@@ -1,8 +1,4 @@
-'use strict'
-
-module.exports = cept
-
-function cept(context, name, callback) {
+export function cept(context, name, callback) {
   var original = context[name]
 
   context[name] = callback
