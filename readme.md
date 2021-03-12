@@ -43,14 +43,14 @@ There is no default export.
 ### `stop = cept(context, key, callback)`
 
 Intercept all calls to `context[key]` (e.g., `console.log`).
-From now on, when the original method would be invoked, `callback` is used
+From now on, when the original method would be called, `callback` is used
 instead.
-Invoking `stop` reverts everything back to normal.
+Calling `stop` reverts everything back to normal.
 
 ###### Parameters
 
 *   `context` (`Object`) — Context object
-*   `key` (`string`) — Property where the original function lives
+*   `key` (`string`) — Field where the original method lives
 *   `callback` (`Function`) - Interceptor
 
 ###### Returns
