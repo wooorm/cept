@@ -4,7 +4,8 @@
  * instead.
  * Calling `stop` reverts everything back to normal.
  *
- * @param {Record<string | number, unknown>} context Context object
+ * @template {object} T
+ * @param {T} context Context object
  * @param {string | number} name Field where the original method lives
  * @param {Function} callback Interceptor
  */
