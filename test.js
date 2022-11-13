@@ -3,8 +3,8 @@ import test from 'tape'
 import {cept} from './index.js'
 
 test('cept(context, key, callback)', function (t) {
-  var original = process.cwd()
-  var stop = cept(process, 'cwd', fake)
+  const original = process.cwd()
+  const stop = cept(process, 'cwd', fake)
 
   t.equal(process.cwd(), fake())
 

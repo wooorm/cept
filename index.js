@@ -11,7 +11,7 @@
  */
 export function cept(context, name, callback) {
   /** @type {unknown} */
-  var original = context[name]
+  const original = context[name]
 
   context[name] = callback
 
