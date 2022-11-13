@@ -1,61 +1,12 @@
 # cept
 
-[![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
-[![Size][size-badge]][size]
+**Stability: Legacy**.
+This package is no longer recommended for use.
+It’s still covered by semantic-versioning guarantees and not yet deprecated, but
+use of this package should be avoided.
+Please use a [`assert.CallTracker`][calltracker] or so.
 
-Intercept method calls.
-
-## Install
-
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
-
-```sh
-npm install cept
-```
-
-## Use
-
-```js
-import {cept} from 'cept'
-
-// Intercept:
-var stop = cept(console, 'log', noop)
-
-// From now on `console.log` is ignored:
-console.log('foo bar baz')
-
-// No longer ignored!
-stop()
-
-function noop() {}
-```
-
-## API
-
-This package exports the following identifiers: `cept`.
-There is no default export.
-
-### `stop = cept(context, key, callback)`
-
-Intercept all calls to `context[key]` (e.g., `console.log`).
-From now on, when the original method would be called, `callback` is used
-instead.
-Calling `stop` reverts everything back to normal.
-
-###### Parameters
-
-*   `context` (`Object`) — Context object
-*   `key` (`string`) — Field where the original method lives
-*   `callback` (`Function`) - Interceptor
-
-###### Returns
-
-`Function` — Used to revert back to the previous function.
+Legacy [documentation for this package][docs] is still available in Git.
 
 ## License
 
@@ -63,24 +14,10 @@ Calling `stop` reverts everything back to normal.
 
 <!-- Definitions -->
 
-[build-badge]: https://github.com/wooorm/cept/workflows/main/badge.svg
-
-[build]: https://github.com/wooorm/cept/actions
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/cept.svg
-
-[coverage]: https://codecov.io/github/wooorm/cept
-
-[downloads-badge]: https://img.shields.io/npm/dm/cept.svg
-
-[downloads]: https://www.npmjs.com/package/cept
-
-[size-badge]: https://img.shields.io/bundlephobia/minzip/cept.svg
-
-[size]: https://bundlephobia.com/result?p=cept
-
-[npm]: https://docs.npmjs.com/cli/install
-
 [license]: license
 
 [author]: https://wooorm.com
+
+[docs]: https://github.com/wooorm/cept/tree/365fba5
+
+[calltracker]: https://nodejs.org/api/assert.html#class-assertcalltracker
