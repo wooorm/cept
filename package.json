@@ -1,6 +1,6 @@
 {
   "name": "cept",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Legacy package to intercept method calls",
   "license": "MIT",
   "keywords": [
